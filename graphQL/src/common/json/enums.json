@@ -1,0 +1,9 @@
+{
+    "PLANNED": "planned",
+    "CLOSED": "closed",
+    "OPENED": "opened",
+    "AUTO": "auto",
+    "MANUAL": "Manual",
+    "POSTED": "Posted",
+    "UN_POSTED": "UnPosted"
+}
