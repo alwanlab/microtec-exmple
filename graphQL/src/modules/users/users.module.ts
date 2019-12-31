@@ -19,9 +19,8 @@ import { UserEntity } from './entity/users.entity';
             signOptions: { expiresIn: '7d' },
         })
     ],
-    controllers: [UsersController, AuthController],
+    controllers: [UsersController],
     providers: [
-        AuthService,
         UsersService,
         JwtStrategy,
     ]
