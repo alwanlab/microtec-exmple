@@ -8,13 +8,10 @@ export class BaseService {
 
     }
 
-    async findAll(query, options) {
-        return await this.Model.find(query);
+    async findAll() {
+        return await this.Model.find();
     }
 
-    async find(query) {
-        return await this.Model.find(query);
-    }
 
     async create(body) {
         try {

@@ -1,12 +1,7 @@
+import { InputType,Field ,ID} from 'type-graphql';
 
-
-import { ObjectType,Field ,ID} from 'type-graphql';
-
-@ObjectType()
-export class User {
-
-    @Field(()=> ID)
-    id: number;
+@InputType()
+export class UserInput {
 
     @Field()
     userName: string;
