@@ -19,7 +19,7 @@ export class UsersResolver {
     }
 
 
-    @Mutation(() => [User])
+    @Mutation(() => User)
     async createUser(@Args('input') input: UserInput) {
         
         let item = await this.usersService.create({
@@ -30,8 +30,6 @@ export class UsersResolver {
             phone: input.phone,
             userNotes: input.userNotes
         })
-
-        console.log(item)
         return item;
     }
 }
